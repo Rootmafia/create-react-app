@@ -1,7 +1,7 @@
 {
-  "name": "react-scripts",
+  "name": "frodo-react-scripts",
   "version": "2.1.1",
-  "description": "Configuration and scripts for Create React App.",
+  "description": "Configuration and scripts for Create React App. + optional chaining",
   "repository": "facebook/create-react-app",
   "license": "MIT",
   "engines": {
@@ -25,6 +25,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.1.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -62,6 +63,7 @@
     "postcss-safe-parser": "4.0.1",
     "react-app-polyfill": "^0.1.3",
     "react-dev-utils": "^6.1.1",
+    "react-error-overlay": "^5.1.0",
     "resolve": "1.8.1",
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
