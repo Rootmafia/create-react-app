@@ -374,17 +374,24 @@ module.exports = function(webpackEnv) {
                 // @remove-on-eject-end
                 plugins: [
                   [
-                    require.resolve('babel-plugin-named-asset-import'),
+                    require.resolve("@babel/plugin-proposal-decorators"),
+                    {
+                      decoratorsBeforeExport: false,
+                      legacy: false
+                    }
+                  ],
+                  [
+                    require.resolve("babel-plugin-named-asset-import"),
                     {
                       loaderMap: {
                         svg: {
                           ReactComponent:
-                            '@svgr/webpack?-prettier,-svgo![path]',
-                        },
-                      },
-                    },
+                            "@svgr/webpack?-prettier,-svgo![path]"
+                        }
+                      }
+                    }
                   ],
-                  require.resolve('@babel/plugin-proposal-optional-chaining'),
+                  require.resolve("@babel/plugin-proposal-optional-chaining")
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/
