@@ -1,6 +1,6 @@
 {
   "name": "frodo-react-scripts",
-  "version": "2.1.7",
+  "version": "2.1.11",
   "description": "Configuration and scripts for Create React App. + optional chaining",
   "repository": "facebook/create-react-app",
   "license": "MIT",
